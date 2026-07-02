@@ -1,0 +1,62 @@
+[
+  {
+    "name": "hero-black-lada",
+    "alt": "Чёрный автомобиль в студии BLACKWIND.TMN под шестигранным LED-светом",
+    "webp": "assets/images/hero-black-lada.webp",
+    "thumb": "assets/images/thumbs/hero-black-lada.webp"
+  },
+  {
+    "name": "niva-tint",
+    "alt": "Тонированная Нива в студии BLACKWIND.TMN",
+    "webp": "assets/images/niva-tint.webp",
+    "thumb": "assets/images/thumbs/niva-tint.webp"
+  },
+  {
+    "name": "mercedes-polish",
+    "alt": "Белый Mercedes после ухода и детейлинга",
+    "webp": "assets/images/mercedes-polish.webp",
+    "thumb": "assets/images/thumbs/mercedes-polish.webp"
+  },
+  {
+    "name": "kia-front-ppf",
+    "alt": "Kia в работе под светом детейлинг-студии",
+    "webp": "assets/images/kia-front-ppf.webp",
+    "thumb": "assets/images/thumbs/kia-front-ppf.webp"
+  },
+  {
+    "name": "lada-vesta-rear",
+    "alt": "Lada Vesta после работ в BLACKWIND.TMN",
+    "webp": "assets/images/lada-vesta-rear.webp",
+    "thumb": "assets/images/thumbs/lada-vesta-rear.webp"
+  },
+  {
+    "name": "mercedes-front",
+    "alt": "Mercedes с тонированным стеклом и глянцевым кузовом",
+    "webp": "assets/images/mercedes-front.webp",
+    "thumb": "assets/images/thumbs/mercedes-front.webp"
+  },
+  {
+    "name": "bmw-detailing",
+    "alt": "BMW в зоне детейлинга BLACKWIND.TMN",
+    "webp": "assets/images/bmw-detailing.webp",
+    "thumb": "assets/images/thumbs/bmw-detailing.webp"
+  },
+  {
+    "name": "lada-burgundy",
+    "alt": "Бордовый автомобиль перед работами по детейлингу",
+    "webp": "assets/images/lada-burgundy.webp",
+    "thumb": "assets/images/thumbs/lada-burgundy.webp"
+  },
+  {
+    "name": "toyota-tint",
+    "alt": "Белый Toyota с выполненной тонировкой",
+    "webp": "assets/images/toyota-tint.webp",
+    "thumb": "assets/images/thumbs/toyota-tint.webp"
+  },
+  {
+    "name": "black-kia",
+    "alt": "Чёрная Kia с глубоким глянцем и тонировкой",
+    "webp": "assets/images/black-kia.webp",
+    "thumb": "assets/images/thumbs/black-kia.webp"
+  }
+]
