@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Календарь записи BLACKWIND.TMN — выбор услуги и времени</title>
+  <meta name="description" content="Большой календарь записи BLACKWIND.TMN: выберите услугу, дату и свободное время для детейлинга, тонировки, полировки, бронеплёнки или химчистки.">
+  <meta name="theme-color" content="#05070a">
+  <meta property="og:title" content="Календарь записи BLACKWIND.TMN">
+  <meta property="og:description" content="Выберите услугу, дату и свободный слот в большом календаре записи.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html#top" aria-label="BLACKWIND.TMN — на главный экран">
+      <span class="logo-mark">BW</span>
+      <span class="logo-text">BLACKWIND<span>.TMN</span></span>
+    </a>
+    <nav class="nav" aria-label="Главная навигация">
+      <a href="index.html#services">Услуги</a>
+      <a href="calendar.html" aria-current="page">Календарь</a>
+      <a href="index.html#promo">Акция</a>
+      <a href="index.html#works">Работы</a>
+      <a href="index.html#why">Преимущества</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <a class="header-cta" href="#booking-calendar">Выбрать время</a>
+    <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="calendar-page section-pad" id="booking-calendar" aria-labelledby="calendar-title" data-calendar>
+      <div class="container">
+        <div class="calendar-hero reveal">
+          <span class="section-label">Онлайн-запись</span>
+          <h1 id="calendar-title">Большой календарь записи</h1>
+          <p>Выберите услугу, день и свободное время. Зелёные слоты доступны, красные уже заняты или недоступны для записи.</p>
+        </div>
+
+        <div class="booking-layout">
+          <aside class="service-picker reveal" aria-labelledby="service-picker-title">
+            <div class="panel-heading">
+              <span>Шаг 1</span>
+              <h2 id="service-picker-title">Услуга</h2>
+            </div>
+            <div class="service-options" aria-label="Выбор услуги">
+              <button type="button" class="service-option is-active" data-service="tint" aria-pressed="true">
+                <span>Тонировка авто</span>
+                <strong>2-3 часа</strong>
+              </button>
+              <button type="button" class="service-option" data-service="polish" aria-pressed="false">
+                <span>Полировка кузова и фар</span>
+                <strong>4-6 часов</strong>
+              </button>
+              <button type="button" class="service-option" data-service="ppf" aria-pressed="false">
+                <span>Бронеплёнка кузова / фар / экранов</span>
+                <strong>3-8 часов</strong>
+              </button>
+              <button type="button" class="service-option" data-service="clean" aria-pressed="false">
+                <span>Химчистка салона</span>
+                <strong>5-7 часов</strong>
+              </button>
+              <button type="button" class="service-option" data-service="promo" aria-pressed="false">
+                <span>Акция: хамелеон + второй слой</span>
+                <strong>3 часа</strong>
+              </button>
+            </div>
+          </aside>
+
+          <section class="calendar-shell reveal" style="--delay:.08s" aria-labelledby="month-title">
+            <div class="calendar-toolbar">
+              <button type="button" class="calendar-nav-button" data-calendar-prev aria-label="Предыдущий месяц">‹</button>
+              <div>
+                <span>Шаг 2</span>
+                <h2 id="month-title" data-calendar-title>Месяц</h2>
+              </div>
+              <button type="button" class="calendar-nav-button" data-calendar-next aria-label="Следующий месяц">›</button>
+            </div>
+            <div class="calendar-legend" aria-label="Обозначения календаря">
+              <span><i class="legend-dot is-free"></i>Есть свободное время</span>
+              <span><i class="legend-dot is-busy"></i>Занято</span>
+              <span><i class="legend-dot is-muted"></i>Прошедшая дата</span>
+            </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+            </div>
+            <div class="calendar-grid" data-calendar-grid></div>
+          </section>
+
+          <aside class="slot-panel reveal" style="--delay:.16s" aria-labelledby="slot-panel-title">
+            <div class="panel-heading">
+              <span>Шаг 3</span>
+              <h2 id="slot-panel-title">Время</h2>
+            </div>
+            <div class="selected-day" data-selected-day>Выберите дату в календаре</div>
+            <div class="slot-grid" data-slot-grid></div>
+            <div class="booking-summary" data-booking-summary>
+              <span>Выбранный слот</span>
+              <strong>Пока не выбран</strong>
+              <p>После выбора времени оставьте контакты, и администратор подтвердит запись.</p>
+            </div>
+            <form class="booking-form" data-calendar-form>
+              <label>Имя<input type="text" name="name" placeholder="Как к вам обращаться" required></label>
+              <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></label>
+              <label>Автомобиль<input type="text" name="car" placeholder="Например: Toyota Camry"></label>
+              <button class="btn btn-primary" type="submit" data-booking-submit disabled>Выберите свободное время</button>
+              <p class="form-note" data-booking-message>Красные слоты уже заняты. Для срочной записи напишите в WhatsApp или Telegram.</p>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html#top"><span class="logo-mark">BW</span><span class="logo-text">BLACKWIND<span>.TMN</span></span></a>
+      <p>© <span data-year></span> BLACKWIND.TMN. Детейлинг, тонировка, полировка, бронеплёнка и химчистка.</p>
+      <a href="#top" class="to-top">Наверх</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
